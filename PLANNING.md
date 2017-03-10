@@ -27,6 +27,7 @@
 				* Time Delta and/or Distance Delta
 			* 1d[n] Favorite Location 3
 				* Time Delta and/or Distance Delta
+
 ### Possible features:
 1. User accounts
 2. Multiple proposed new addresses
