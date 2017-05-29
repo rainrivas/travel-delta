@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Test Site</title>
+		<link href="http://cdn.alloyui.com/3.0.1/aui-css/css/bootstrap.min.css" rel="stylesheet"></link>
+	</head>
+	<body>
+		<header>
+			<!-- Latest compiled and minified CSS -->
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+			<link rel="stylesheet" href="css/custom.scss">
+		</header>
+
+		<div class="form-container">
+			<div class="row">
+				<div class="col-md-6 col-md-offset-2">	
+					<form id="locationGroups">
+						<div class="current-location location-group">
+							<div class="group-title">
+								<h3>Current Location</h3>
+							</div>
+							
+							<div class="form-group">
+								<label class="control-label" for="currentLocationName">Name:</label>
+								
+								<div class="controls">
+									<input name="currentLocationName" id="currentLocationName" class="form-control" type="text">
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label class="control-label" for="currentLocationAddress">Address:</label>
+								
+								<div class="controls">
+									<input name="currentLocationAddress" id="currentLocationAddress" class="form-control" type="text">
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label class="control-label" for="currentLocationZip">Zip:</label>
+								
+								<div class="controls">
+									<input name="currentLocationZip" id="currentLocationZip" class="form-control" type="text">
+								</div>
+							</div>
+						</div>
+
+						<div class="new-location location-group">
+							<div class="group-title">
+								<h3>New Location</h3>
+							</div>
+
+							<div class="form-group">
+								<label class="control-label" for="newLocationName">Name:</label>
+								
+								<div class="controls">
+									<input name="newLocationName" id="newLocationName" class="form-control" type="text">
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label class="control-label" for="newLocationAddress">Address:</label>
+								
+								<div class="controls">
+									<input name="newLocationAddress" id="newLocationAddress" class="form-control" type="text">
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label class="control-label" for="newLocationZip">Zip:</label>
+								
+								<div class="controls">
+									<input name="newLocationZip" id="newLocationZip" class="form-control" type="text">
+								</div>
+							</div>
+						</div>
+
+						<input class="btn btn-info" type="submit" value="Submit">
+						<input class="btn btn-primary" type="reset" value="Reset">
+					</form>
+				</div>
+			</div> <!--End Row-->
+			
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3">
+					<form id="secondAddress">
+						<div class="form-group">
+							<label class="control-label"></label>
+						</div>
+					</form>
+				</div>	
+			</div>
+		</div>
+	
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+	
+	<script src="http://cdn.alloyui.com/3.0.1/aui/aui-min.js"></script>
+	
+	<script src="js/main.js"></script>
+	
+	</body>
+</html>
