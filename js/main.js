@@ -21,7 +21,7 @@ YUI().use(
 						maxLength: 5,
 						required: true
 					}
-		};
+			};
 
 		var fieldStrings = 
 			{
