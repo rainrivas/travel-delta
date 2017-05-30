@@ -3,21 +3,21 @@
 
 ### Input flow for User:
 1. Enter starting information
-	1. Enter Address fields for favorite locations with nicknames.
-		1. Street Address
-		2. City
-		3. Zip
-		4. Nickname
+	1. Enter Address fields for favorite locations with nicknames. (This should come last, should include +/- buttons to add/remove fields)
+		1. Nickname
+		2. Street Address
+		3. City
+		4. Zip
 	2. Enter Current Address.
-		1. Street Address
-		2. City
-		3. Zip
-		4. Nickname (Home or Current)
+		1. Nickname (Home or Current)
+		2. Street Address
+		3. City
+		4. Zip
 	3. Enter Proposed new address.
-		1. Street Address
-		2. City
-		3. Zip
-		4. Nickname (New)
+		1. Nickname (New)
+		2. Street Address
+		3. City
+		4. Zip
 2. **Submit information.** 
 	1. Expected Return:
 		* **3d** - Nickname of new address
