@@ -2,24 +2,16 @@ YUI().use(
 	'aui-form-validator',
 	function(Y) {
 		var rules = {
-			currentLocationName: {
+			locationName: {
 				required: true
 			},
-			currentLocationAddress: {
+			locationAddress: {
 				required: true
 			},
-			currentLocationZip: {
-				minLength: 5,
-				maxLength: 5,
+			locationCity: {
 				required: true
 			},
-			newLocationName: {
-				required: true
-			},
-			newLocationAddress: {
-				required: true
-			},
-			newLocationZip: {
+			locationZip: {
 				minLength: 5,
 				maxLength: 5,
 				required: true
@@ -27,23 +19,17 @@ YUI().use(
 		};
 
 		var fieldStrings = {
-			currentLocationName: {
-				required: 'Nickname for your current location.'
+			locationName: {
+				required: 'Nickname for this location.'
 			},
-			currentLocationAddress: {
-				required: 'Address of your current location.'
+			locationAddress: {
+				required: 'Address of this location.'
 			},
-			currentLocationZip: {
-				required: 'Current location zip code.'
+			locationCity: {
+				required: 'City for this location.'
 			},
-			newLocationName: {
-				required: 'Nickname for your new location.'
-			},
-			newLocationAddress: {
-				required: 'Address of your new location.'
-			},
-			newLocationZip: {
-				required: 'Current location zip code.'
+			locationZip: {
+				required: 'Must be a valid zip code.'
 			}
 		};
 
