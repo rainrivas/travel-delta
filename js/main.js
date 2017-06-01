@@ -1,21 +1,21 @@
 YUI().use(
 	'aui-form-validator',
 	function(Y) {
-		var rules = 
+		var rules =
 			{
-				locationName: 
+				locationName:
 					{
 						required: true
 					},
-				locationAddress: 
+				locationAddress:
 					{
 						required: true
 					},
-				locationCity: 
+				locationCity:
 					{
 						required: true
 					},
-				locationZip: 
+				locationZip:
 					{
 						minLength: 5,
 						maxLength: 5,
@@ -23,21 +23,21 @@ YUI().use(
 					}
 			};
 
-		var fieldStrings = 
+		var fieldStrings =
 			{
-				locationName: 
+				locationName:
 					{
 						required: 'Nickname for this location.'
 					},
-				locationAddress: 
+				locationAddress:
 					{
 						required: 'Address of this location.'
 					},
-				locationCity: 
+				locationCity:
 					{
 						required: 'City for this location.'
 					},
-				locationZip: 
+				locationZip:
 					{
 						required: 'Must be a valid zip code.'
 					}
@@ -51,3 +51,29 @@ YUI().use(
 		});
 	}
 );
+
+// sweet es6
+const addFav = () => {
+	const favLocationGroups = document.getElementsByClassName('favorite-location-groups')[0];
+
+	// make the wrapping div
+	const newFormGroup = document.createElement('div');
+	newFormGroup.className = 'form-group';
+
+	// make a new label
+	const newLabel = document.createElement('label');
+	newLabel.className = 'control-label';
+	newLabel.setAttribute('for', 'favoriteLocation')
+	newLabel.innerText = 'Favorite Location:';
+
+	// make a new input
+	const newFavLocationInput = document.createElement('input');
+	newFavLocationInput.className = 'form-control';
+	newFavLocationInput.setAttribute('type', 'text');
+
+	// put label and input inside wrapping div
+	// append the new form-group to favLocationGroups
+	newFormGroup.appendChild(newLabel);
+	newFormGroup.appendChild(newFavLocationInput);
+	favLocationGroups.appendChild(newFormGroup);
+}
