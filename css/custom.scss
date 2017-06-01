@@ -1,9 +1,4 @@
 /* debug */
-form {
-	background-color: #f2f2f2;
-	border-radius: 5px;
-	padding: 20px;
-}
 
 .form-container {
 	padding: 15px 30px 15px 30px;
@@ -16,9 +11,10 @@ form {
 }
 
 .location-group {
-	padding: 5px;
+	background-color: #f2f2f2;
+	padding: 20px;
 	border-radius: 5px;
-	border: 1px solid white;
+	border: 1px solid #999;
 	margin-bottom: 5px;
 }
 
