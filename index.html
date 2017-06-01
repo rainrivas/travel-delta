@@ -14,16 +14,16 @@
 
 		<div class="form-container">
 			<div class="row">
-				<div class="col-md-5 col-md-offset-1 col-lg-5 col-lg-offset-1">	
+				<div class="col-md-5 col-md-offset-1 col-lg-5 col-lg-offset-1">
 					<form id="locationGroups">
 						<div class="current-location location-group">
 							<div class="group-title">
 								<h3>Current Location</h3>
 							</div>
-							
+
 							<div class="form-group">
 								<label class="control-label" for="currentLocationName">Name:</label>
-								
+
 								<div class="controls">
 									<input name="locationName" id="currentLocationName" class="form-control" type="text">
 								</div>
@@ -31,7 +31,7 @@
 
 							<div class="form-group">
 								<label class="control-label" for="currentLocationAddress">Address:</label>
-								
+
 								<div class="controls">
 									<input name="locationAddress" id="currentLocationAddress" class="form-control" type="text">
 								</div>
@@ -39,7 +39,7 @@
 
 							<div class="form-group">
 								<label class="control-label" for="currentLocationCity">City:</label>
-								
+
 								<div class="controls">
 									<input name="locationCity" id="currentLocationCity" class="form-control" type="text">
 								</div>
@@ -47,7 +47,7 @@
 
 							<div class="form-group">
 								<label class="control-label" for="currentLocationZip">Zip:</label>
-								
+
 								<div class="controls">
 									<input name="locationZip" id="currentLocationZip" class="form-control" type="text">
 								</div>
@@ -61,7 +61,7 @@
 
 							<div class="form-group">
 								<label class="control-label" for="newLocationName">Name:</label>
-								
+
 								<div class="controls">
 									<input name="locationName" id="newLocationName" class="form-control" type="text">
 								</div>
@@ -69,7 +69,7 @@
 
 							<div class="form-group">
 								<label class="control-label" for="newLocationAddress">Address:</label>
-								
+
 								<div class="controls">
 									<input name="locationAddress" id="newLocationAddress" class="form-control" type="text">
 								</div>
@@ -77,7 +77,7 @@
 
 							<div class="form-group">
 								<label class="control-label" for="newLocationCity">City:</label>
-								
+
 								<div class="controls">
 									<input name="locationCity" id="newLocationCity" class="form-control" type="text">
 								</div>
@@ -85,7 +85,7 @@
 
 							<div class="form-group">
 								<label class="control-label" for="newLocationZip">Zip:</label>
-								
+
 								<div class="controls">
 									<input name="locationZip" id="newLocationZip" class="form-control" type="text">
 								</div>
@@ -97,36 +97,37 @@
 					</form>
 				</div>
 
-				<div class="col-md-5 col-lg-5">	
+				<div class="col-md-5 col-lg-5">
 					<form id="favoriteLocations">
 						<div class="favorite-location-groups">
 							<div class="form-group">
-								<!-- 
-								DEBUG === this should contain dynamic variables for "for" field and for ID's. 
+								<!--
+								DEBUG === this should contain dynamic variables for "for" field and for ID's.
 								e.g. id="'favoriateLocation' {counter}"
 								-->
-								<label class="control-label" for="favoriteLocation1">First Favorite Location:</label>
-								
+								<label class="control-label" for="favoriteLocation1">Favorite Location:</label>
+
 								<div class="controls">
 									<input name="favoriteLocation" id="favoriteLocation1" class="form-control" type="text">
 								</div>
 							</div>
 						</div>
+						<a class="addFav" onClick="addFav()"> + Add Fav</a>
 					</form>
 
 				</div>
 			</div> <!--End Row-->
 		</div>
-	
+
 	<!-- jQuery library -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 	<!-- Latest compiled JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
-	
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 	<script src="http://cdn.alloyui.com/3.0.1/aui/aui-min.js"></script>
-	
+
 	<script src="js/main.js"></script>
-	
+
 	</body>
 </html>
