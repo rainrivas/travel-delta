@@ -21,3 +21,9 @@
 .group-title {
 	padding: 0;
 }
+
+.addFav {
+	&:hover {
+		cursor: copy;
+	}
+}

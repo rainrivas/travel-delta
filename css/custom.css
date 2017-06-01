@@ -1,0 +1,23 @@
+/* debug */
+.form-container {
+  padding: 15px 30px 15px 30px;
+  overflow-x: hidden; }
+
+.form-group {
+  background: transparent;
+  padding: 0 20px 0 20px; }
+
+.location-group {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid #999;
+  margin-bottom: 5px; }
+
+.group-title {
+  padding: 0; }
+
+.addFav:hover {
+  cursor: copy; }
+
+/*# sourceMappingURL=custom.css.map */
