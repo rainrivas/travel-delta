@@ -27,3 +27,18 @@
 		cursor: copy;
 	}
 }
+
+.controls {
+	display: flex;
+	align-items: center;
+	input {
+		margin-right: 5px;
+	}
+
+	.invisible {
+		opacity: 0;
+	}
+	.invisible:hover {
+		opacity: 1;
+	}
+}

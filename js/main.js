@@ -60,6 +60,10 @@ const addFav = () => {
 	const newFormGroup = document.createElement('div');
 	newFormGroup.className = 'form-group';
 
+	// make new wrapper for input and delete buttons
+	const newControlsDiv = document.createElement('div');
+	newControlsDiv.className = 'controls';
+
 	// make a new label
 	const newLabel = document.createElement('label');
 	newLabel.className = 'control-label';
@@ -71,9 +75,20 @@ const addFav = () => {
 	newFavLocationInput.className = 'form-control';
 	newFavLocationInput.setAttribute('type', 'text');
 
+	// make the delete button
+	const newDeleteButton = document.createElement('span');
+	newDeleteButton.className = 'glyphicon glyphicon-remove btn btn-danger';
+	newDeleteButton.onclick = (e) => {
+		var formGroup = document.getElementsByClassName('favorite-location-groups')[0];
+
+		formGroup.removeChild(e.target.parentElement.parentElement);
+	}
+
 	// put label and input inside wrapping div
 	// append the new form-group to favLocationGroups
 	newFormGroup.appendChild(newLabel);
-	newFormGroup.appendChild(newFavLocationInput);
+	newControlsDiv.appendChild(newFavLocationInput);
+	newControlsDiv.appendChild(newDeleteButton);
+	newFormGroup.appendChild(newControlsDiv);
 	favLocationGroups.appendChild(newFormGroup);
 }

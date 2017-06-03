@@ -20,4 +20,14 @@
 .addFav:hover {
   cursor: copy; }
 
+.controls {
+  display: flex;
+  align-items: center; }
+  .controls input {
+    margin-right: 5px; }
+  .controls .invisible {
+    opacity: 0; }
+  .controls .invisible:hover {
+    opacity: 1; }
+
 /*# sourceMappingURL=custom.css.map */
