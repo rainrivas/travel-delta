@@ -52,8 +52,20 @@ YUI().use(
 	}
 );
 
+// set count of location groups
+let locationCount = countFavoriteLocations();
+
+// function to count how many favorite location groups
+function countFavoriteLocations() {
+	var favLocGroup = $('#favoriteLocationGroup > .form-group');
+
+	return favLocGroup.length;
+}
 // sweet es6
 const addFav = () => {
+	// locationCount function should recount 
+	locationCount = countFavoriteLocations() + 1; //countFavoriteLocations();
+
 	const favLocationGroups = document.getElementsByClassName('favorite-location-groups')[0];
 
 	// make the wrapping div
@@ -67,8 +79,8 @@ const addFav = () => {
 	// make a new label
 	const newLabel = document.createElement('label');
 	newLabel.className = 'control-label';
-	newLabel.setAttribute('for', 'favoriteLocation')
-	newLabel.innerText = 'Favorite Location:';
+	newLabel.setAttribute('for', 'favoriteLocation' + locationCount);
+	newLabel.innerText = 'Favorite Location ' + locationCount + ':';
 
 	// make a new input
 	const newFavLocationInput = document.createElement('input');
