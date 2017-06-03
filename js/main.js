@@ -53,18 +53,34 @@ YUI().use(
 );
 
 // set count of location groups
-let locationCount = countFavoriteLocations();
+let locationCount = getFavoriteLocations();
 
 // function to count how many favorite location groups
-function countFavoriteLocations() {
+function getFavoriteLocations() {
 	var favLocGroup = $('#favoriteLocationGroup > .form-group');
 
 	return favLocGroup.length;
 }
+
+// Need to add function to reassign attributes 'for' and inntertext 'favorite location locationCounts'
+const reassignFav = () => {
+	locationCount = 1;
+
+	$('#favoriteLocationGroup label.control-label').each(
+		function(index, element) {
+			
+			element.setAttribute('for', 'favoriteLocation' + locationCount);
+			element.innerText = 'Favorite Location ' + locationCount + ':';
+			
+			locationCount++;
+		}
+	);
+}
+
 // sweet es6
 const addFav = () => {
 	// locationCount function should recount 
-	locationCount = countFavoriteLocations() + 1; //countFavoriteLocations();
+	locationCount = getFavoriteLocations() + 1; //countFavoriteLocations();
 
 	const favLocationGroups = document.getElementsByClassName('favorite-location-groups')[0];
 
@@ -94,6 +110,8 @@ const addFav = () => {
 		var formGroup = document.getElementsByClassName('favorite-location-groups')[0];
 
 		formGroup.removeChild(e.target.parentElement.parentElement);
+
+		reassignFav();
 	}
 
 	// put label and input inside wrapping div
