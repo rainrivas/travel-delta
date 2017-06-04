@@ -20,14 +20,14 @@
 .addFav:hover {
   cursor: copy; }
 
-.controls {
+.favorite-location-groups .controls {
   display: flex;
   align-items: center; }
-  .controls input {
+  .favorite-location-groups .controls input {
     margin-right: 5px; }
-  .controls .invisible {
+  .favorite-location-groups .controls .invisible {
     opacity: 0; }
-  .controls .invisible:hover {
+  .favorite-location-groups .controls .invisible:hover {
     opacity: 1; }
 
 /*# sourceMappingURL=custom.css.map */
