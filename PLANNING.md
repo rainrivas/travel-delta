@@ -38,7 +38,7 @@
 1. Old Address
 	- Possible to consider using geolocationAPI to determine current location as a suggestion.
 2. New Address
-3. Favoraite Locations
+3. Favorite Locations
 	- add/remove buttons
 	- each bar should search google
 		- "OK" button to lock in result
