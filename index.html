@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta charset="UTF-8">
 		<title>Test Site</title>
 		<link href="http://cdn.alloyui.com/3.0.1/aui-css/css/bootstrap.min.css" rel="stylesheet"></link>
 	</head>
@@ -98,18 +99,18 @@
 				</div>
 
 				<div class="col-md-5 col-lg-5">
-					<form id="favoriteLocations">
-						<div class="favorite-location-groups location-group">
+					<form id="favoriteLocationsForm">
+						<div class="favorite-location-groups location-group" id="favoriteLocationGroup">
 							<div class="form-group">
 								<!--
 								DEBUG === this should contain dynamic variables for "for" field and for ID's.
 								e.g. id="'favoriateLocation' {counter}"
 								-->
-								<label class="control-label" for="favoriteLocation1">Favorite Location:</label>
+								<label class="control-label" for="favoriteLocation1">Favorite Location 1:</label>
 
 								<div class="controls">
 									<input name="favoriteLocation" id="favoriteLocation1" class="form-control" type="text">
-									<span class="addFav btn btn-primary glyphicon glyphicon-plus" onClick="addFav()"></span>
+									<span class="addFav btn btn-primary glyphicon glyphicon-plus" onClick="addFav(); reassignFav()"></span>
 								</div>
 							</div>
 						</div>
