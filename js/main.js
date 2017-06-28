@@ -51,7 +51,7 @@ YUI().use(
 		});
 	}
 );
-
+/*
 // set count of location groups
 let locationCount = getFavoriteLocations();
 
@@ -122,3 +122,44 @@ const addFav = () => {
 	newFormGroup.appendChild(newControlsDiv);
 	favLocationGroups.appendChild(newFormGroup);
 }
+*/
+
+console.log("Connected");
+var newToDo;
+var addToDo = $("#addToDo");
+var toDoEntry = $("#toDoEntry");
+
+/* ALTERNATIVE CHOICE */
+// $(".fa-plus").on("click",function(){
+//     toDoEntry.fadeToggle();
+// });
+
+addToDo.on("click", function() {
+    toDoEntry.toggleClass("hidden");
+    toDoEntry.val("");
+});
+
+// This could become a "create new to do function which is called upon keypress of +ToDo button"
+toDoEntry.on("keypress", function(event) {
+    if (event.which === 13) {
+        console.log("You Pressed Enter; I should do something");
+        newToDo = "<li>" + toDoEntry.val() + " <span><i class='glyphicon glyphicon-trash' aria-hidden='true'></i></span></li>";
+        // $(newToDo).appendTo($("ul"));
+        $("#favs").append(newToDo);
+        toDoEntry.val("");
+        toDoEntry.toggleClass("hidden")
+            // once new list added and field cleared, we need to hide the to do list agian
+    }
+});
+
+// parent gets the listener so that we can check for clicks on child elements
+$("#favs").on("click", "li", function() {
+    $(this).toggleClass("completed");
+});
+
+$("#favs").on("click", "span", function(event) {
+    $(this).parent().fadeOut(350, function() {
+        $(this).remove();
+    });
+    event.stopPropogation(); // stops the span click from bubbling to li
+});

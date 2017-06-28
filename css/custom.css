@@ -1,33 +1,115 @@
 /* debug */
+
 .form-container {
-  padding: 15px 30px 15px 30px;
-  overflow-x: hidden; }
+    padding: 15px 30px 15px 30px;
+    overflow-x: hidden;
+}
 
 .form-group {
-  background: transparent;
-  padding: 0 20px 0 20px; }
+    background: transparent;
+    padding: 0 20px 0 20px;
+}
 
 .location-group {
-  background-color: #f2f2f2;
-  padding: 20px;
-  border-radius: 5px;
-  border: 1px solid #999;
-  margin-bottom: 15px; }
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #999;
+    margin-bottom: 15px;
+}
 
 .group-title {
-  padding: 0; }
+    padding: 0;
+}
 
 .addFav:hover {
-  cursor: copy; }
+    cursor: copy;
+}
 
 .favorite-location-groups .controls {
-  display: flex;
-  align-items: center; }
-  .favorite-location-groups .controls input {
-    margin-right: 5px; }
-  .favorite-location-groups .controls .invisible {
-    opacity: 0; }
-  .favorite-location-groups .controls .invisible:hover {
-    opacity: 1; }
+    display: flex;
+    align-items: center;
+}
+
+.favorite-location-groups .controls input {
+    margin-right: 5px;
+}
+
+.favorite-location-groups .controls .invisible {
+    opacity: 0;
+}
+
+.favorite-location-groups .controls .invisible:hover {
+    opacity: 1;
+}
+
+span {
+    background-color: #e74c3c;
+    height: 40px;
+    width: 0px;
+    transition: 0.2s linear;
+    display: inline-block;
+    margin-right: 20px;
+    text-align: center;
+    color: white;
+    opacity: 0;
+    float: right;
+}
+
+ul {
+    list-style: none;
+    /* remove the default style (bullet points) */
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    /*background-color: #ffffff;*/
+    height: 40px;
+    line-height: 40px;
+    color: #666666;
+}
+
+input {
+    font-size: 18px;
+    color: #2980b9;
+    background-color: #f7f7f7;
+    width: 100%;
+    padding: 13px 13px 13px 20px;
+    box-sizing: border-box;
+    /* we will need the web kit preface (moz) */
+    border: 3px solid rgba(0, 0, 0, 0);
+}
+
+/*li:nth-child(2n) {
+    background-color: #ffffff;
+}*/
+
+input:focus {
+    background: white;
+    border: 3px solid #2980b9;
+    outline: none;
+}
+
+li:hover span {
+    width: 40px;
+    opacity: 1.0;
+}
+
+.hidden {
+    display: none;
+}
+
+.completed {
+    color: grey;
+    text-decoration: line-through;
+}
+
+#addToDo {
+    border: none;
+    background: rgba(0, 0, 0, 0);
+    float: right;
+}
+
 
 /*# sourceMappingURL=custom.css.map */

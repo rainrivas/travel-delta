@@ -1,134 +1,128 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<title>Test Site</title>
-		<link href="http://cdn.alloyui.com/3.0.1/aui-css/css/bootstrap.min.css" rel="stylesheet">
-	</head>
-	<body>
-		<header>
-			<!-- Latest compiled and minified CSS -->
-			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-			<link rel="stylesheet" href="css/custom.css">
-		</header>
+<head>
+    <meta charset="UTF-8">
+    <title>Test Site</title>
+    <link href="http://cdn.alloyui.com/3.0.1/aui-css/css/bootstrap.min.css" rel="stylesheet">
+</head>
 
-		<div class="form-container">
-			<div class="row">
-				<div class="col-md-5 col-md-offset-1 col-lg-5 col-lg-offset-1">
-					<form id="locationGroups">
-						<div class="current-location location-group">
-							<div class="group-title">
-								<h3>Current Location</h3>
-							</div>
-
-							<div class="form-group">
-								<label class="control-label" for="currentLocationName">Location Name:</label>
-
-								<div class="controls">
-									<input name="locationName" id="currentLocationName" class="form-control" type="text" title="Location Name" placeholder="Location Name">
-								</div>
-							</div>
-
-							<div class="form-group">
-								<label class="control-label" for="currentLocationAddress">Address:</label>
-
-								<div class="controls">
-									<input name="locationAddress" id="currentLocationAddress" class="form-control" type="text" title="Address" placeholder="123 Location Street">
-								</div>
-							</div>
-
-							<div class="form-group">
-								<label class="control-label" for="currentLocationCity">City:</label>
-
-								<div class="controls">
-									<input name="locationCity" id="currentLocationCity" class="form-control" type="text" title="City" placeholder="Nifty Location">
-								</div>
-							</div>
-
-							<div class="form-group">
-								<label class="control-label" for="currentLocationZip">Zip:</label>
-
-								<div class="controls">
-									<input name="locationZip" id="currentLocationZip" class="form-control" type="text" pattern="[0-9]{5}" title="5 digit zipcode" placeholder="12345">
-								</div>
-							</div>
-						</div>
-
-						<div class="new-location location-group">
-							<div class="group-title">
-								<h3>New Location</h3>
-							</div>
-
-							<div class="form-group">
-								<label class="control-label" for="newLocationName">Location Name:</label>
-
-								<div class="controls">
-									<input name="locationName" id="newLocationName" class="form-control" type="text" title="Location Name" placeholder="Location Name">
-								</div>
-							</div>
-
-							<div class="form-group">
-								<label class="control-label" for="newLocationAddress">Address:</label>
-
-								<div class="controls">
-									<input name="locationAddress" id="newLocationAddress" class="form-control" type="text" title="Address" placeholder="123 Location Street">
-								</div>
-							</div>
-
-							<div class="form-group">
-								<label class="control-label" for="newLocationCity">City:</label>
-
-								<div class="controls">
-									<input name="locationCity" id="newLocationCity" class="form-control" type="text" title="City" placeholder="Nifty Location">
-								</div>
-							</div>
-
-							<div class="form-group">
-								<label class="control-label" for="newLocationZip">Zip:</label>
-
-								<div class="controls">
-									<input name="locationZip" id="newLocationZip" class="form-control" type="text" pattern="[0-9]{5}" title="5 digit zipcode" placeholder="12345">
-								</div>
-							</div>
-						</div>
-
-						<input class="btn btn-info" type="submit" value="Submit">
-						<input class="btn btn-primary" type="reset" value="Reset">
-					</form>
-				</div>
-
-				<div class="col-md-5 col-lg-5">
-					<form id="favoriteLocationsForm">
-						<div class="favorite-location-groups location-group" id="favoriteLocationGroup">
-							<div class="form-group">
-								<!--
+<body>
+    <header>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/custom.css">
+    </header>
+    <div class="form-container">
+        <div class="row">
+            <div class="col-md-5 col-md-offset-1 col-lg-5 col-lg-offset-1">
+                <form id="locationGroups">
+                    <div class="current-location location-group">
+                        <div class="group-title">
+                            <h3>Current Location</h3>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" for="currentLocationName">Location Name:</label>
+                            <div class="controls">
+                                <input name="locationName" id="currentLocationName" class="form-control" type="text" title="Location Name" placeholder="Location Name">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" for="currentLocationAddress">Address:</label>
+                            <div class="controls">
+                                <input name="locationAddress" id="currentLocationAddress" class="form-control" type="text" title="Address" placeholder="123 Location Street">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" for="currentLocationCity">City:</label>
+                            <div class="controls">
+                                <input name="locationCity" id="currentLocationCity" class="form-control" type="text" title="City" placeholder="Nifty Location">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" for="currentLocationZip">Zip:</label>
+                            <div class="controls">
+                                <input name="locationZip" id="currentLocationZip" class="form-control" type="text" pattern="[0-9]{5}" title="5 digit zipcode" placeholder="12345">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="new-location location-group">
+                        <div class="group-title">
+                            <h3>New Location</h3>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" for="newLocationName">Location Name:</label>
+                            <div class="controls">
+                                <input name="locationName" id="newLocationName" class="form-control" type="text" title="Location Name" placeholder="Location Name">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" for="newLocationAddress">Address:</label>
+                            <div class="controls">
+                                <input name="locationAddress" id="newLocationAddress" class="form-control" type="text" title="Address" placeholder="123 Location Street">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" for="newLocationCity">City:</label>
+                            <div class="controls">
+                                <input name="locationCity" id="newLocationCity" class="form-control" type="text" title="City" placeholder="Nifty Location">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" for="newLocationZip">Zip:</label>
+                            <div class="controls">
+                                <input name="locationZip" id="newLocationZip" class="form-control" type="text" pattern="[0-9]{5}" title="5 digit zipcode" placeholder="12345">
+                            </div>
+                        </div>
+                    </div>
+                    <input class="btn btn-info" type="submit" value="Submit">
+                    <input class="btn btn-primary" type="reset" value="Reset">
+                </form>
+            </div>
+            <div class="col-md-5 col-lg-5">
+                <form id="favoriteLocationsForm">
+                    <div class="favorite-location-groups location-group" id="favoriteLocationGroup">
+                        <div class="group-title">
+                            <h3>Fav Locations<i id="addToDo" class="glyphicon glyphicon-plus" aria-hidden="true"></i></h3>
+                            <input type="text" id="toDoEntry" placeholder="Add New Fav" class="hidden">
+                        </div>
+                        <div class="form-group">
+                            <!--
 								DEBUG === this should contain dynamic variables for "for" field and for ID's.
 								e.g. id="'favoriateLocation' {counter}"
 								-->
-								<label class="control-label" for="favoriteLocation1">Favorite Location 1:</label>
+                            <label class="control-label" for="favoriteLocation1">Favorite Location 1:</label>
+                            <!-- <div class="controls"> -->
+                                <ul id="favs">
+                                    <li>
+                                        Sample 1 <span><i class="glyphicon glyphicon-trash" aria-hidden="true"></i></span>
+                                    </li>
+                                </ul>
+                                <!-- <input name="favoriteLocation" id="favoriteLocation1" class="form-control" type="text"> -->
+                                <!-- <span class="addFav btn btn-primary glyphicon glyphicon-plus" onClick="addFav(); reassignFav()"></span> -->
+                            <!-- </div> -->
+                        </div>
+                    </div>
+                    <div id="container">
+                        <h1>To Do List<i id="addToDo" class="fa fa-plus-circle" aria-hidden="true"></i></h1>
+                        <input type="text" id="toDoEntry" placeholder="Add New To Do" class="hidden">
+                        <ul>
+                            <li><span><i class="fa fa-trash fa-lg" aria-hidden="true"></i></span> Sample 1</li>
+                            <li><span><i class="fa fa-trash fa-lg" aria-hidden="true"></i></span> Sample 2</li>
+                            <li><span><i class="fa fa-trash fa-lg" aria-hidden="true"></i></span> Sample 3</li>
+                        </ul>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!--End Row-->
+    </div>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="http://cdn.alloyui.com/3.0.1/aui/aui-min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
 
-								<div class="controls">
-									<input name="favoriteLocation" id="favoriteLocation1" class="form-control" type="text">
-									<span class="addFav btn btn-primary glyphicon glyphicon-plus" onClick="addFav(); reassignFav()"></span>
-								</div>
-							</div>
-						</div>
-					</form>
-
-				</div>
-			</div> <!--End Row-->
-		</div>
-
-	<!-- jQuery library -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-	<!-- Latest compiled JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-	<script src="http://cdn.alloyui.com/3.0.1/aui/aui-min.js"></script>
-
-	<script src="js/main.js"></script>
-
-	</body>
 </html>
