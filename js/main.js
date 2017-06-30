@@ -51,6 +51,7 @@ YUI().use(
 		});
 	}
 );
+
 /*
 // set count of location groups
 let locationCount = getFavoriteLocations();
@@ -153,9 +154,9 @@ toDoEntry.on("keypress", function(event) {
 });
 
 // parent gets the listener so that we can check for clicks on child elements
-$("#favs").on("click", "li", function() {
-    $(this).toggleClass("completed");
-});
+// $("#favs").on("click", "li", function() {
+//     $(this).toggleClass("completed");
+// });
 
 $("#favs").on("click", "span", function(event) {
     $(this).parent().fadeOut(350, function() {

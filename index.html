@@ -5,14 +5,12 @@
     <meta charset="UTF-8">
     <title>Test Site</title>
     <link href="http://cdn.alloyui.com/3.0.1/aui-css/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
 </head>
 
 <body>
-    <header>
-        <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/custom.css">
-    </header>
     <div class="form-container">
         <div class="row">
             <div class="col-md-5 col-md-offset-1 col-lg-5 col-lg-offset-1">
@@ -80,7 +78,7 @@
                 </form>
             </div>
             <div class="col-md-5 col-lg-5">
-                <form id="favoriteLocationsForm">
+                <!-- <form id="favoriteLocationsForm"> -->
                     <div class="favorite-location-groups location-group" id="favoriteLocationGroup">
                         <div class="group-title">
                             <h3>Fav Locations<i id="addToDo" class="glyphicon glyphicon-plus" aria-hidden="true"></i></h3>
@@ -91,28 +89,16 @@
 								DEBUG === this should contain dynamic variables for "for" field and for ID's.
 								e.g. id="'favoriateLocation' {counter}"
 								-->
-                            <label class="control-label" for="favoriteLocation1">Favorite Location 1:</label>
-                            <!-- <div class="controls"> -->
                                 <ul id="favs">
                                     <li>
-                                        Sample 1 <span><i class="glyphicon glyphicon-trash" aria-hidden="true"></i></span>
+                                        Best Boba 123 Boba Ave, Cool Place, 98765 <span><i class="glyphicon glyphicon-trash" aria-hidden="true"></i></span>
                                     </li>
                                 </ul>
                                 <!-- <input name="favoriteLocation" id="favoriteLocation1" class="form-control" type="text"> -->
                                 <!-- <span class="addFav btn btn-primary glyphicon glyphicon-plus" onClick="addFav(); reassignFav()"></span> -->
-                            <!-- </div> -->
                         </div>
                     </div>
-                    <div id="container">
-                        <h1>To Do List<i id="addToDo" class="fa fa-plus-circle" aria-hidden="true"></i></h1>
-                        <input type="text" id="toDoEntry" placeholder="Add New To Do" class="hidden">
-                        <ul>
-                            <li><span><i class="fa fa-trash fa-lg" aria-hidden="true"></i></span> Sample 1</li>
-                            <li><span><i class="fa fa-trash fa-lg" aria-hidden="true"></i></span> Sample 2</li>
-                            <li><span><i class="fa fa-trash fa-lg" aria-hidden="true"></i></span> Sample 3</li>
-                        </ul>
-                    </div>
-                </form>
+                <!-- </form> -->
             </div>
         </div>
         <!--End Row-->
