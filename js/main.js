@@ -1,6 +1,6 @@
 YUI().use(
 	'aui-form-validator',
-	function(Y) {
+	Y => {
 		var rules =
 			{
 				locationName:
@@ -135,13 +135,13 @@ var toDoEntry = $("#toDoEntry");
 //     toDoEntry.fadeToggle();
 // });
 
-addToDo.on("click", function() {
+addToDo.on("click", () => {
     toDoEntry.toggleClass("hidden");
     toDoEntry.val("");
 });
 
 // This could become a "create new to do function which is called upon keypress of +ToDo button"
-toDoEntry.on("keypress", function(event) {
+toDoEntry.on("keypress", event => {
     if (event.which === 13) {
         console.log("You Pressed Enter; I should do something");
         newToDo = "<li>" + toDoEntry.val() + " <span><i class='glyphicon glyphicon-trash' aria-hidden='true'></i></span></li>";
