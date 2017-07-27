@@ -101,18 +101,18 @@
 				<div class="col-md-5 col-lg-5">
 					<form id="favoriteLocationsForm">
 						<div class="favorite-location-groups location-group" id="favoriteLocationGroup">
+                        <div class="group-title">
+                                <h3>New Location <span class="addFav btn btn-primary glyphicon glyphicon-plus" onClick="addFav(); reassignFav()"></span></h3>
+                            </div>
 							<div class="form-group">
 								<!--
 								DEBUG === this should contain dynamic variables for "for" field and for ID's.
 								e.g. id="'favoriateLocation' {counter}"
 								-->
-								<label class="control-label" for="favoriteLocation1">Favorite Location 1:</label>
-
-								<div class="controls">
-									<input name="favoriteLocation" id="favoriteLocation1" class="form-control" type="text">
-									<span class="addFav btn btn-primary glyphicon glyphicon-plus" onClick="addFav(); reassignFav()"></span>
-								</div>
-							</div>
+                            <label class="control-label" for="favoriteLocation1">Favorite Location 1:</label>
+                            <div class="controls">
+                                <input class="form-control" type="text"><span id="rmFav" class="glyphicon glyphicon-remove btn btn-danger"></span>
+                            </div>
 						</div>
 					</form>
 

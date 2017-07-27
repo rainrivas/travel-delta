@@ -17,8 +17,11 @@
 .group-title {
   padding: 0; }
 
-.addFav:hover {
-  cursor: copy; }
+.addFav,.addFav:hover {
+  cursor: copy;
+  float: right;
+  margin-right: 1.5em;
+}
 
 .favorite-location-groups .controls {
   display: flex;

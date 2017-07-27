@@ -77,6 +77,15 @@ const reassignFav = () => {
 	);
 }
 
+const deleteFavButton = $('#rmFav');
+
+deleteFavButton.on("click", function() {
+	console.log($(this));
+	console.log($(this).parent().parent());
+	$(this).parent().parent().remove();
+	reassignFav();
+});
+
 // sweet es6
 const addFav = () => {
 	// locationCount function should recount 
