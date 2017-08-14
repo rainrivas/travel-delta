@@ -3,19 +3,37 @@ YUI().use(
 	function(Y) {
 		var rules =
 			{
-				locationName:
+				currentLocationName:
 					{
 						required: true
 					},
-				locationAddress:
+				currentLocationAddress:
 					{
 						required: true
 					},
-				locationCity:
+				currentLocationCity:
 					{
 						required: true
 					},
-				locationZip:
+				currentLocationZip:
+					{
+						minLength: 5,
+						maxLength: 5,
+						required: true
+					},
+				newLocationName:
+					{
+						required: true
+					},
+				newLocationAddress:
+					{
+						required: true
+					},
+				newLocationCity:
+					{
+						required: true
+					},
+				newLocationZip:
 					{
 						minLength: 5,
 						maxLength: 5,

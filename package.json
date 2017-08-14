@@ -1,0 +1,30 @@
+{
+  "name": "travel-delta",
+  "version": "0.0.1",
+  "description": "A simple tool to help you calcualte changes in travel time when moving",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "ejs": "^2.5.7",
+    "express": "^4.15.4",
+    "express-sanitizer": "^1.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rainrivas/travel-delta.git"
+  },
+  "keywords": [
+    "nodejs",
+    "express"
+  ],
+  "author": "",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/rainrivas/travel-delta/issues"
+  },
+  "homepage": "https://github.com/rainrivas/travel-delta#readme"
+}

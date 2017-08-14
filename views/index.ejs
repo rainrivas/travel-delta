@@ -10,13 +10,13 @@
 			<!-- Latest compiled and minified CSS -->
 			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-			<link rel="stylesheet" href="css/custom.css">
+			<link rel="stylesheet" href="/css/custom.css">
 		</header>
 
 		<div class="form-container">
 			<div class="row">
 				<div class="col-md-5 col-md-offset-1 col-lg-5 col-lg-offset-1">
-					<form id="locationGroups">
+					<form id="locationGroups" action="/search" method"GET">
 						<div class="current-location location-group">
 							<div class="group-title">
 								<h3>Current Location</h3>
@@ -26,7 +26,7 @@
 								<label class="control-label" for="currentLocationName">Location Name:</label>
 
 								<div class="controls">
-									<input name="locationName" id="currentLocationName" class="form-control" type="text" title="Location Name" placeholder="Location Name">
+									<input name="currentLocationName" id="currentLocationName" class="form-control" type="text" title="Location Name" placeholder="Location Name">
 								</div>
 							</div>
 
@@ -34,7 +34,7 @@
 								<label class="control-label" for="currentLocationAddress">Address:</label>
 
 								<div class="controls">
-									<input name="locationAddress" id="currentLocationAddress" class="form-control" type="text" title="Address" placeholder="123 Location Street">
+									<input name="currentLocationAddress" id="currentLocationAddress" class="form-control" type="text" title="Address" placeholder="123 Location Street">
 								</div>
 							</div>
 
@@ -42,7 +42,7 @@
 								<label class="control-label" for="currentLocationCity">City:</label>
 
 								<div class="controls">
-									<input name="locationCity" id="currentLocationCity" class="form-control" type="text" title="City" placeholder="Nifty Location">
+									<input name="currentLocationCity" id="currentLocationCity" class="form-control" type="text" title="City" placeholder="Nifty Location">
 								</div>
 							</div>
 
@@ -50,7 +50,7 @@
 								<label class="control-label" for="currentLocationZip">Zip:</label>
 
 								<div class="controls">
-									<input name="locationZip" id="currentLocationZip" class="form-control" type="text" pattern="[0-9]{5}" title="5 digit zipcode" placeholder="12345">
+									<input name="currentLocationZip" id="currentLocationZip" class="form-control" type="text" pattern="[0-9]{5}" title="5 digit zipcode" placeholder="12345">
 								</div>
 							</div>
 						</div>
@@ -64,7 +64,7 @@
 								<label class="control-label" for="newLocationName">Location Name:</label>
 
 								<div class="controls">
-									<input name="locationName" id="newLocationName" class="form-control" type="text" title="Location Name" placeholder="Location Name">
+									<input name="newLocationName" id="newLocationName" class="form-control" type="text" title="Location Name" placeholder="Location Name">
 								</div>
 							</div>
 
@@ -72,7 +72,7 @@
 								<label class="control-label" for="newLocationAddress">Address:</label>
 
 								<div class="controls">
-									<input name="locationAddress" id="newLocationAddress" class="form-control" type="text" title="Address" placeholder="123 Location Street">
+									<input name="newLocationAddress" id="newLocationAddress" class="form-control" type="text" title="Address" placeholder="123 Location Street">
 								</div>
 							</div>
 
@@ -80,7 +80,7 @@
 								<label class="control-label" for="newLocationCity">City:</label>
 
 								<div class="controls">
-									<input name="locationCity" id="newLocationCity" class="form-control" type="text" title="City" placeholder="Nifty Location">
+									<input name="newLocationCity" id="newLocationCity" class="form-control" type="text" title="City" placeholder="Nifty Location">
 								</div>
 							</div>
 
@@ -88,7 +88,7 @@
 								<label class="control-label" for="newLocationZip">Zip:</label>
 
 								<div class="controls">
-									<input name="locationZip" id="newLocationZip" class="form-control" type="text" pattern="[0-9]{5}" title="5 digit zipcode" placeholder="12345">
+									<input name="newLocationZip" id="newLocationZip" class="form-control" type="text" pattern="[0-9]{5}" title="5 digit zipcode" placeholder="12345">
 								</div>
 							</div>
 						</div>
@@ -128,7 +128,7 @@
 
 	<script src="http://cdn.alloyui.com/3.0.1/aui/aui-min.js"></script>
 
-	<script src="js/main.js"></script>
+	<script src="/js/main.js"></script>
 
 	</body>
 </html>
